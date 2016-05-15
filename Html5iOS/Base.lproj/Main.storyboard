@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A3h-2F-x3K">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainControl" id="BYZ-38-t0r" customClass="MainController" customModule="Html5iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pqb-vH-jwn"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Dr-FE-Jy8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcF-ul-lIg">
+                                <rect key="frame" x="274" y="129" width="52" height="30"/>
+                                <state key="normal" title="Button1"/>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="274" y="163" width="52" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="52" width="52" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="112" y="452" width="52" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="C0B-q0-Ojh" kind="push" identifier="gotoTest" id="YKg-JD-E7E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSp-JG-8Qu">
+                                <rect key="frame" x="273" y="227" width="55" height="30"/>
+                                <state key="normal" title="Button2"/>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="273" y="259" width="55" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="111" y="139" width="55" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="111" y="539" width="55" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="button2Event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XwQ-xY-1bx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-dS-Pg2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button3"/>
+                                <connections>
+                                    <action selector="button3Event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWp-Xq-dqS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DSp-JG-8Qu" firstAttribute="leading" secondItem="Bxy-dS-Pg2" secondAttribute="leading" id="4Zw-pW-bGP"/>
+                            <constraint firstItem="EcF-ul-lIg" firstAttribute="centerX" secondItem="DSp-JG-8Qu" secondAttribute="centerX" id="GLD-PF-gXR"/>
+                            <constraint firstItem="Bxy-dS-Pg2" firstAttribute="top" secondItem="DSp-JG-8Qu" secondAttribute="bottom" constant="52" id="KeZ-6O-dSf"/>
+                            <constraint firstItem="DSp-JG-8Qu" firstAttribute="top" secondItem="EcF-ul-lIg" secondAttribute="bottom" constant="54" id="j7R-oD-iR2"/>
+                            <constraint firstItem="EcF-ul-lIg" firstAttribute="top" secondItem="pqb-vH-jwn" secondAttribute="bottom" constant="42" id="ouo-2g-sx7"/>
+                            <constraint firstItem="EcF-ul-lIg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wnV-zY-s4i"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Bxy-dS-Pg2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="KeZ-6O-dSf"/>
+                                <exclude reference="GLD-PF-gXR"/>
+                                <exclude reference="ouo-2g-sx7"/>
+                                <exclude reference="wnV-zY-s4i"/>
+                                <exclude reference="4Zw-pW-bGP"/>
+                                <exclude reference="j7R-oD-iR2"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Bxy-dS-Pg2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="KeZ-6O-dSf"/>
+                                <include reference="GLD-PF-gXR"/>
+                                <include reference="ouo-2g-sx7"/>
+                                <include reference="wnV-zY-s4i"/>
+                                <include reference="4Zw-pW-bGP"/>
+                                <include reference="j7R-oD-iR2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="nro-0D-bET"/>
+                    <connections>
+                        <outlet property="button1" destination="EcF-ul-lIg" id="bxB-bw-QdN"/>
+                        <outlet property="button2" destination="DSp-JG-8Qu" id="39v-zz-OoF"/>
+                        <outlet property="button3" destination="Bxy-dS-Pg2" id="VuU-fs-r6M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="428"/>
+        </scene>
+        <!--Test Controller-->
+        <scene sceneID="DF2-lk-irj">
+            <objects>
+                <viewController storyboardIdentifier="webControl" id="C0B-q0-Ojh" customClass="TestController" customModule="Html5iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YhE-uX-cjt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y6Z-CZ-Jro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HO6-7p-wR7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oul-gJ-u9J">
+                                <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="145" width="121" height="29"/>
+                                </variation>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="oul-gJ-u9J"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="oul-gJ-u9J"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="QKs-Gh-opd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCQ-c9-SVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2ca-rW-U6y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A3h-2F-x3K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EdB-zS-JnY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Isy-uk-1np"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osw-IY-7e1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="428"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+                <meta name="format-detection" content="telephone=no">
+                    <meta name="apple-mobile-web-app-capable" content="yes"/>
+                    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+                    <meta name="format-detection" content="telephone=no"/>
+                    <meta name="format-detection" content="email=no"/>
+                    <title>默认首页</title>
+                    
+                    
+                    <style type="text/css">
+                        
+                        </style>
+    </head>
+    <body>
+        <div id="content">
+            <video src=""></video>
+        </div>
+
+            <br>
+            <button onclick="XwebBridge.call('notify',{body:'testssssss'},function(e){alert(e.id)})">notify</button>
+            <button onclick="XwebBridge.call('close')">close</button>
+            <button onclick="XwebBridge.call('open',{url:'http://www.baidu.com'})">open</button>
+            <button onclick="location.reload()">reload</button>
+            <script type="text/javascript">
+                console.log("init")
+                var xwebReady=function(){
+
+                }
+                </script>
+    </body>
+</html>
+
+
